@@ -5,6 +5,7 @@ const age = document.getElementById('user-age');
 
 
 const submitButton = document.getElementById('submit-button');
+const resetButton = document.getElementById('reset-button');
 
 submitButton.addEventListener('click', function(){
     const nameInput = (entireName.value);
@@ -43,5 +44,12 @@ submitButton.addEventListener('click', function(){
     }
 
 
+}
+);
+
+resetButton.addEventListener('click', function(){
+    const nameInput = '';
+    const kmInput = '';
+    const ageValue = '';
 }
 );
