@@ -16,38 +16,80 @@
 
         <main>
             <div class="container-lg pt-5">
-             <div class="my-row">
-                 <div class="col-12 text-center">
-                     <h1 class="fw-bold">Il prezzo del tuo biglietto è</h1>
-                 </div>
- 
-                 <div class="col-12  mt-5">
-                    <form>
-                        <!-- <label for="user-name">Nome e Cognome</label>
-                        <input id="user-km" type="number" placeholder="Inserisci Nome e Cognome"></input> -->
+             <div class="my-row text-white text-center">
+                <h2 class="fw-bold mb-3">Calcola il prezzo del tuo biglietto</h2>
 
-                        <label for="user-km">Km da percorrere</label>
-                        <input id="user-km" type="number" placeholder="Inserisci i km che dovrai percorrere"></input>
+                <div class="col-12 text-center bg-white rounded-4 p-4 mb-4">
+                    <form class="row">
+                        <div class="col-4">
+                            <label for="user-name">Nome e Cognome</label>
+                            <input id="user-name" type="text" placeholder="Nome e Cognome"></input>
+                        </div>
+                        
+                        <div class="col-4">
+                            <label for="user-km">Km da percorrere</label>
+                            <input id="user-km" type="number" placeholder="Km da percorrere"></input>
+                        </div>
 
+                        <div class="col-4">
                         <label for="user-age">Fascia d'età</label>
                         <select id="user-age">
                             <option value="18">Maggiorenne</option>
                             <option value="17">Minorenne</option>
                             <option value="66">Over 65</option>
                         </select>
-
-                        <button id="submit-button" type="button">Invia</button>
+                        </div>
+                        
+                        
+                        <div class="col-12 mt-5">
+                            <button id="submit-button" type="button" class="btn btn-outline-danger">Genera</button>
+                            <button id="reset-button" type="reset" class="btn btn-outline-secondary">Annulla</button>
+                        </div>
                     </form>
                      
-                 </div>
+                </div>
+                
+                <h2 class="fw-bold mb-3">Il tuo biglietto</h2>
 
-                 <div class="col-12  mt-5">
-                    
-                    <span id="container-result">
+                <div class="col-12 bg-white rounded-4 p-4 ">
+                    <h3 class="text-black mb-3">Dettaglio passeggeri</h3>
+                    <div class="row">
+                        <div class="col-4 bg-secondary py-2 rounded-3">
+                            <h5 class="mb-3">Nome Passeggero</h5>
+                            <span id="name-container" class="fs-5">
 
-                    </span>
-                     
-                 </div>
+                            </span>
+                        </div>
+
+                        <div class="col-2 px-2 text-black">
+                            <h5 class="mb-5">Offerta</h5>
+                            <span id="discount-container">
+
+                            </span>
+                        </div>
+
+                        <div class="col-2 px-2 text-black">
+                            <h5 class="mb-5">Carrozza</h5>
+                            <span id="wagon-container">
+
+                            </span>
+                        </div>
+
+                        <div class="col-2 px-2 text-black">
+                            <h5 class="mb-5">Codice CP</h5>
+                            <span id="code-container">
+
+                            </span>
+                        </div>
+
+                        <div class="col-2 px-2 text-black">
+                            <h5 class="mb-5">Costo Biglietto</h5>
+                            <span id="price-container">
+
+                            </span>
+                        </div>
+                    </div>
+                </div>
              </div>
             </div>
  
